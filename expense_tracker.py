@@ -116,12 +116,12 @@ def add_expense(data):
             amount = float(amount)
             break
         except ValueError:
-            print("⚠️ Amount must be a number. Try again.")
+            print(" Amount must be a number. Try again.")
             
     # Add to list and save
     expenses.append({"date": date,"category": category ,"name": name, "amount": amount})
     save_data(expenses)
-    print(f"✅ Saved: {date} -{category}-{name} (${amount})")
+    print(f"Saved: {date} -{category}-{name} (${amount})")
 
 
 def delete_expense(data):
@@ -171,7 +171,7 @@ def show_monthly_summary(data):
     monthly_totals = {}
     for e in expenses:
         try:
-            date_obj = datetime.strptime(e["date"], "%Y-%m-%d")  # ✅ FIX: define date_obj here
+            date_obj = datetime.strptime(e["date"], "%Y-%m-%d")  #FIX: define date_obj here
             month = date_obj.strftime("%Y-%m")
 
             monthly_totals[month] = monthly_totals.get(month, 0) + e["amount"]
@@ -242,10 +242,10 @@ def set_goal(data):
             amount = float(input("Enter your monthly savings goal ($): "))
             data["goal"] = amount
             save_data(data)
-            print(f"✅ Savings goal set to ${amount:.2f}")
+            print(f" Savings goal set to ${amount:.2f}")
             break
         except ValueError:
-            print("⚠️ Please enter a valid number.")
+            print(" Please enter a valid number.")
 
 
 def check_progress(data):
@@ -264,11 +264,11 @@ def check_progress(data):
         percent = (total_spent/budget) * 100
         print(f"Used {percent:.1f}% of your budget.")
         if total_spent > budget:
-            print("⚠️ You’ve exceeded your budget!")
+            print("You’ve exceeded your budget!")
         elif total_spent >= 0.8 * budget:
-            print("⚠️ You’re nearing your budget limit!")
+            print("You’re nearing your budget limit!")
         else:
-            print("✅ You’re within your budget.")
+            print("You’re within your budget.")
 
     if goal > 0:
             remaining = budget - total_spent
@@ -328,7 +328,7 @@ def main():
         elif choice == "9":
             check_progress(data)
         elif choice == "10":
-            print("Goodbye👋")
+            print("Goodbye:)")
             break
         else:
             print("Invalid choice, please try again!")
@@ -336,7 +336,5 @@ def main():
 if __name__ == "__main__":
     main()
 
-#allows code to run only when the script is executed, not when it’s imported.
-#The idiom checks if the __name__ variable equals "__main__", confirming that the script is the top-level module.
-#Using this idiom helps prevent unintended code execution during module imports.
+
 
