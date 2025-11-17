@@ -1,0 +1,70 @@
+{
+    "expenses": [
+        {
+            "date": "2025-10-10",
+            "name": "Tution",
+            "amount": 1200.0
+        },
+        {
+            "date": "2025-10-10",
+            "name": "Cats",
+            "amount": 40.0
+        },
+        {
+            "date": "2025-10-10",
+            "category": "Food",
+            "name": "chocolate",
+            "amount": 12.0
+        },
+        {
+            "date": "2025-10-10",
+            "category": "Transport",
+            "name": "train",
+            "amount": 12.0
+        },
+        {
+            "date": "2025-10-10",
+            "category": "Food",
+            "name": "soda",
+            "amount": 6.0
+        },
+        {
+            "date": "2025-10-10",
+            "category": "Entertainment",
+            "name": "movie",
+            "amount": 30.0
+        },
+        {
+            "date": "2025-10-11",
+            "category": "Food",
+            "name": "chocolate",
+            "amount": 3.0
+        },
+        {
+            "date": "2025-10-11",
+            "category": "Utilities",
+            "name": "100",
+            "amount": 1000.0
+        },
+        {
+            "date": "2025-10-11",
+            "category": "Food",
+            "name": "ex",
+            "amount": 1233.0
+        },
+        {
+            "date": "2025-08-15",
+            "category": "Tuition",
+            "name": "Fee",
+            "amount": 200.0
+        },
+        {
+            "date": "2025-09-05",
+            "category": "Food",
+            "name": "Lunch",
+            "amount": 10.0
+        }
+    ],
+    "budget": 2000.0,
+    "goal": 4000.0
+}
